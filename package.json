@@ -1,0 +1,53 @@
+{
+  "name": "TypeScript",
+  "version": "1.0.0",
+  "author": "",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitizen": "^4.2.1",
+    "conventional-changelog-config-spec": "^2.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "standard-version": "^9.0.0"
+  },
+  "scripts": {
+    "release:r": "standard-version -r",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cz": "git add . && git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eug620/TypeScript.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "standard-version": {
+    "skip": {
+      "tag": true
+    },
+    "scripts": {
+      "postchangelog": "npm run changelog-slice"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/Eug620/TypeScript/issues"
+  },
+  "homepage": "https://github.com/Eug620/TypeScript#readme"
+}

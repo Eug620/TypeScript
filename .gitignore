@@ -1,1 +1,4 @@
-*.js
+node_modules
+基础/*.js
+进阶/*.js
+工程/*.js
