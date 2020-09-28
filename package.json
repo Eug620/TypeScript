@@ -18,8 +18,9 @@
   },
   "scripts": {
     "release:r": "standard-version -r",
+    "lint": "vue-cli-service lint --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cz": "git add . && git-cz"
+    "ct": "git add . && git-cz"
   },
   "repository": {
     "type": "git",
@@ -27,22 +28,31 @@
   },
   "keywords": [],
   "license": "ISC",
+  "// 1. 添加git hooks": "在向仓库里面提交项目的时候会优先去lint一遍代码, 不符合规范的直接不通过.",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
     }
   },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "npm run lint"
+    ]
+  },
+  "// 2. 添加对git commit 信息的检测": "在向仓库里面提交代码的时候如果git commit message 不规范,  也是不能通过的",
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
     }
   },
+  "// 3. 添加对version的维护": "在日常的开发, 发布版本, 测试版本, 都需要对版本号的维护",
   "standard-version": {
     "skip": {
       "tag": true
     },
     "scripts": {
+      "// 4. changelog": "去掉原来生成的多余的描述, 换成我们自己的提示",
       "postchangelog": "npm run changelog-slice"
     }
   },
