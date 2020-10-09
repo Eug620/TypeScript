@@ -6,20 +6,20 @@
 
 由于本章涉及大量新语法，故在本章开头列出新语法的索引，方便大家在使用这些新语法时能快速查找到对应的讲解：
 
- - [declare var]('/基础/声明文件/declare-var.ts') 声明全局变量
- - [declare function]('/基础/声明文件/declare-function.ts') 声明全局方法
- - [declare class]('/基础/声明文件/declare-class.ts') 声明全局类
- - [declare enum]('/基础/声明文件/declare-enum.ts') 声明全局枚举类型
- - [declare namespace]('/基础/声明文件/declare-namespace.ts') 声明（含有子属性的）全局对象
- - [interface 和 type]('/基础/声明文件/interface-type.ts') 声明全局类型
- - [export]('/基础/声明文件/export.ts') 导出变量
- - [export namespace]('/基础/声明文件/export-namespace.ts') 导出（含有子属性的）对象
- - [export default]('/基础/声明文件/export-default.ts') ES6 默认导出
- - [export =]('/基础/声明文件/export=.ts') commonjs 导出模块
- - [export as namespace]('/基础/声明文件/export-as-namespace.ts') UMD 库声明全局变量
- - [declare global]('/基础/声明文件/declare-global.ts') 扩展全局变量
- - [declare module]('/基础/声明文件/declare-module.ts') 扩展模块
- - [/// <reference \/>]('/基础/声明文件/reference.ts') 三斜线指令
+ - [declare var](declare-var.ts) 声明全局变量
+ - [declare function](declare-function.ts)声明全局方法
+ - [declare class](declare-class.ts)声明全局类
+ - [declare enum](declare-enum.ts)声明全局枚举类型
+ - [declare namespace](declare-namespace.ts)声明（含有子属性的）全局对象
+ - [interface 和 type](interface-type.ts)声明全局类型
+ - [export](export.ts)导出变量
+ - [export namespace](export-namespace.ts)导出（含有子属性的）对象
+ - [export default](export-default.ts)ES6 默认导出
+ - [export =](export=.ts)commonjs 导出模块
+ - [export as namespace](export-as-namespace.ts)UMD 库声明全局变量
+ - [declare global](declare-global.ts)扩展全局变量
+ - [declare module](declare-module.ts)扩展模块
+ - [/// <reference \/>](reference.ts)三斜线指令
 
 ## 什么是声明语句
 
@@ -122,9 +122,9 @@ npm install @types/jquery --save-dev
 
 全局变量的声明文件主要有以下几种语法：
 
- - [declare var]('/基础/声明文件/declare-var.ts') 声明全局变量
- - [declare function]('/基础/声明文件/declare-function.ts') 声明全局方法
- - [declare class]('/基础/声明文件/declare-class.ts') 声明全局类
- - [declare enum]('/基础/声明文件/declare-enum.ts') 声明全局枚举类型
- - [declare namespace]('/基础/声明文件/declare-namespace.ts') 声明（含有子属性的）全局对象
- - [interface 和 type]('/基础/声明文件/interface-type.ts') 声明全局类型
+ - [declare var](declare-var.ts)声明全局变量
+ - [declare function](declare-function.ts)声明全局方法
+ - [declare class](declare-class.ts)声明全局类
+ - [declare enum](declare-enum.ts)声明全局枚举类型
+ - [declare namespace](declare-namespace.ts)声明（含有子属性的）全局对象
+ - [interface 和 type](interface-type.ts)声明全局类型
